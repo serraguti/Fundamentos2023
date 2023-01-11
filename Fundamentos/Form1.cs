@@ -21,6 +21,7 @@ namespace Fundamentos
             //PROGRAMADOR
             this.txtNombre.TextAlign = HorizontalAlignment.Center;
             this.BackColor = Color.Beige;
+            this.btnPulsar.BackColor = Color.LightGreen;
         }
     }
 }
