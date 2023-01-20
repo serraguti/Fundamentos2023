@@ -32,12 +32,12 @@
             this.txtFechaActual = new System.Windows.Forms.TextBox();
             this.chkFormato = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.rdbDias = new System.Windows.Forms.RadioButton();
-            this.rdbMeses = new System.Windows.Forms.RadioButton();
-            this.rdbAnyos = new System.Windows.Forms.RadioButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtIncremento = new System.Windows.Forms.TextBox();
             this.btnIncrementar = new System.Windows.Forms.Button();
+            this.txtIncremento = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.rdbAnyos = new System.Windows.Forms.RadioButton();
+            this.rdbMeses = new System.Windows.Forms.RadioButton();
+            this.rdbDias = new System.Windows.Forms.RadioButton();
             this.label3 = new System.Windows.Forms.Label();
             this.txtNuevaFecha = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
@@ -68,6 +68,7 @@
             this.chkFormato.TabIndex = 2;
             this.chkFormato.Text = "Cambiar Formato Fecha";
             this.chkFormato.UseVisualStyleBackColor = true;
+            this.chkFormato.CheckedChanged += new System.EventHandler(this.chkFormato_CheckedChanged);
             // 
             // groupBox1
             // 
@@ -84,27 +85,31 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Incrementar fecha";
             // 
-            // rdbDias
+            // btnIncrementar
             // 
-            this.rdbDias.AutoSize = true;
-            this.rdbDias.Location = new System.Drawing.Point(34, 42);
-            this.rdbDias.Name = "rdbDias";
-            this.rdbDias.Size = new System.Drawing.Size(71, 34);
-            this.rdbDias.TabIndex = 0;
-            this.rdbDias.TabStop = true;
-            this.rdbDias.Text = "Dias";
-            this.rdbDias.UseVisualStyleBackColor = true;
+            this.btnIncrementar.Location = new System.Drawing.Point(226, 99);
+            this.btnIncrementar.Name = "btnIncrementar";
+            this.btnIncrementar.Size = new System.Drawing.Size(229, 40);
+            this.btnIncrementar.TabIndex = 5;
+            this.btnIncrementar.Text = "Incrementar";
+            this.btnIncrementar.UseVisualStyleBackColor = true;
+            this.btnIncrementar.Click += new System.EventHandler(this.btnIncrementar_Click);
             // 
-            // rdbMeses
+            // txtIncremento
             // 
-            this.rdbMeses.AutoSize = true;
-            this.rdbMeses.Location = new System.Drawing.Point(32, 84);
-            this.rdbMeses.Name = "rdbMeses";
-            this.rdbMeses.Size = new System.Drawing.Size(90, 34);
-            this.rdbMeses.TabIndex = 1;
-            this.rdbMeses.TabStop = true;
-            this.rdbMeses.Text = "Meses";
-            this.rdbMeses.UseVisualStyleBackColor = true;
+            this.txtIncremento.Location = new System.Drawing.Point(340, 42);
+            this.txtIncremento.Name = "txtIncremento";
+            this.txtIncremento.Size = new System.Drawing.Size(115, 35);
+            this.txtIncremento.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(202, 47);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(119, 30);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Incremento";
             // 
             // rdbAnyos
             // 
@@ -117,30 +122,27 @@
             this.rdbAnyos.Text = "Años";
             this.rdbAnyos.UseVisualStyleBackColor = true;
             // 
-            // label2
+            // rdbMeses
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(202, 47);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(119, 30);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Incremento";
+            this.rdbMeses.AutoSize = true;
+            this.rdbMeses.Location = new System.Drawing.Point(32, 84);
+            this.rdbMeses.Name = "rdbMeses";
+            this.rdbMeses.Size = new System.Drawing.Size(90, 34);
+            this.rdbMeses.TabIndex = 1;
+            this.rdbMeses.TabStop = true;
+            this.rdbMeses.Text = "Meses";
+            this.rdbMeses.UseVisualStyleBackColor = true;
             // 
-            // txtIncremento
+            // rdbDias
             // 
-            this.txtIncremento.Location = new System.Drawing.Point(340, 42);
-            this.txtIncremento.Name = "txtIncremento";
-            this.txtIncremento.Size = new System.Drawing.Size(115, 35);
-            this.txtIncremento.TabIndex = 4;
-            // 
-            // btnIncrementar
-            // 
-            this.btnIncrementar.Location = new System.Drawing.Point(226, 99);
-            this.btnIncrementar.Name = "btnIncrementar";
-            this.btnIncrementar.Size = new System.Drawing.Size(229, 40);
-            this.btnIncrementar.TabIndex = 5;
-            this.btnIncrementar.Text = "Incrementar";
-            this.btnIncrementar.UseVisualStyleBackColor = true;
+            this.rdbDias.AutoSize = true;
+            this.rdbDias.Location = new System.Drawing.Point(34, 42);
+            this.rdbDias.Name = "rdbDias";
+            this.rdbDias.Size = new System.Drawing.Size(71, 34);
+            this.rdbDias.TabIndex = 0;
+            this.rdbDias.TabStop = true;
+            this.rdbDias.Text = "Dias";
+            this.rdbDias.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
